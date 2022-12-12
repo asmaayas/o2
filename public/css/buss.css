@@ -1,0 +1,213 @@
+/*// circle map style start*/
+/* body{
+     background-color: #070b24;
+    background-image: url(../img/hero-bg.png); 
+    background-size: 85% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #070b24;
+   
+    min-height: 80vh;
+    position: relative;
+} */
+.meune{
+    position: absolute;
+    top: 0;
+    left: 3;
+    transform: translateX(15%) translateY(5%);
+}
+.base{
+    margin-left: 35%;
+}
+.circleMap {
+    width: 410px;
+    height: 410px;
+    min-height: 410px;
+    min-width: 410px;
+    border-radius: 50%;
+    border: 3px solid #058090;
+    position: relative;
+    margin: 6px;
+    
+  }
+ .circle4{
+    width: 500px;
+    height: 500px;
+    min-height: 500px;
+    min-width: 500px;
+    border-radius: 50%;
+    border: 3px dashed #058090;
+    position: relative;
+    margin: 100px;
+    margin-top: 15%;
+    
+ }
+ .circle2{
+    width: 480px;
+    height: 480px;
+    min-height: 480px;
+    min-width: 480px;
+    border-radius: 50%;
+    border: 20px solid #058090;
+    position: relative;
+    margin: 8px;
+    
+ }
+ .circle3{
+    width: 430px;
+    height: 430px;
+    min-height: 430px;
+    min-width: 430px;
+    border-radius: 50%;
+    border: 3px solid #058090;
+    position: relative;
+    margin: 4px;
+    
+ }
+  .circleMap__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+  }
+  .circleMap__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: left;
+    align-items: left;
+    position: absolute;
+    text-align: left;
+  }
+  .circleMap img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    /* border: 5px solid #fff ; */
+    object-fit: cover;
+  }
+  .circleMa img{
+    height: 33px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 00px;
+    border: 3px solid #058090 ;
+    object-fit: cover;
+    padding: 5px;
+  }
+  .circleMap--text{
+    background-color: #F5F5F5;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .top{
+    top: -28;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+  .left{
+    top: 50%;
+    left: -28;
+    transform: translateX(-78%) translateY(-50%);
+  }
+  .right{
+    top: 50%;
+    right: 0;
+    transform: translateX(78%) translateY(-50%);
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+  }
+  .bottom{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(78%);
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+  }
+  .center{
+    top: 27%;
+    left: 85%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+  }
+  
+
+ ul{
+    list-style: none;
+ }
+ .meune a{
+    color:#058090 ;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    padding-left: 5px;
+ }
+ .meune a:hover{
+color: #000;
+
+ }
+ .bold{
+    border-left: 5px solid #058090 ;
+    font-weight: 900;
+ }
+ .ma{
+    margin-top: 100px;
+ }
+ .mm{
+    height: 90vh;
+    /* width: 90vh; */
+ }
+
+ [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    background: grey;}
+
+    #exampleModal .modal-content{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        }
+        #top{
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            border: 5px solid #fff ;
+            object-fit: cover;
+        }
+        #biig{
+            background-image: url(./images/360-image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      
+        .pic{
+            display: inline-block;
+           
+            border: 5px solid #2a2547;
+          color: white;
+  
+          padding: 3%;
+            position: relative;
+        }
+        .pic:after{
+            
+            content: "";
+            border-width: 7px;
+            border-style: solid;
+            border-color: #2a2547 #2a2547 transparent transparent;
+            position: absolute;
+            bottom: -20px;
+            right: 20%;
+            transform: rotate(-15deg);
+            z-index: -1;
+        }
+        
+  /*// circle map style end*/
