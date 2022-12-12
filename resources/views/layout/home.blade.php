@@ -12,7 +12,7 @@
     <main>
 
         <!-- breadcrumb-area -->
-        <section class="breadcrumb-area breadcrumb-bg">
+        {{-- <section class="breadcrumb-area breadcrumb-bg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <div class="breadcrumb-area market-single-breadcrumb-area ">
             <div class="breadcrumb-bg"></div>
@@ -33,7 +33,7 @@
                             {{-- <div class="home-back-btn"><a href="{{ url("index.html") }}">go back to home</a></div> --}}
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Jordan</a></li>
 
                                 </ol>
                             </nav>
@@ -55,162 +55,70 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
+
                         <section class="">
                             <div class=" py-5">
 
-                             
+                                <p class="title mb-5">Weather</p>
 
-                                        <div id="wrapper-bg" class="card text-white bg-image shadow-4-strong"
-                                            style="background-image: url('img/clouds.gif')">
-                                            <!-- Main current data -->
-                                            <div class="card-header p-4 border-0">
-                                                <div class="text-center mb-3">
-                                                    <p class="h2 mb-1" id="wrapper-name"></p>
-                                                    <p class="mb-1" id="wrapper-description"></p>
-                                                    <p class="display-1 mb-1" id="wrapper-temp"></p>
-                                                    <span class="text-black">Pressure: <span
-                                                            id="wrapper-pressure " class="text-black"></span></span>
-                                                    <span class="mx-2 text-black">|</span>
-                                                    <span class="text-black">Humidity: <span
-                                                            id="wrapper-humidity" class="text-black"></span></span>
-                                                </div>
-                                            </div>
-
-                                            <!-- Hourly forecast -->
-                                
-
-                                            <!-- Daily forecast -->
-                                          
+                                <div id="wrapper-bg" class="card text-white bg-image shadow-4-strong"
+                                    style="background-image: url('img/clouds.gif'); background-repeat: no-repeat;
+                                            background-size: cover;border:none">
+                                    <!-- Main current data -->
+                                    <div class="card-header p-4 border-0">
+                                        <div class="text-center mb-3">
+                                            <p class="h2 mb-1" id="wrapper-name"></p>
+                                            <p class="mb-1" id="wrapper-description"></p>
+                                            <p class="display-1 mb-1" id="wrapper-temp"></p>
+                                            <span class="text-black">Pressure: <span id="wrapper-pressure"
+                                                    class="text-black"></span></span>
+                                            <span class="mx-2 text-black">|</span>
+                                            <span class="text-black">Humidity: <span id="wrapper-humidity"
+                                                    class="text-black"></span></span>
                                         </div>
-
                                     </div>
-                            
+
+                                    <!-- Hourly forecast -->
+
+
+                                    <!-- Daily forecast -->
+
+                                </div>
+
+                            </div>
+
                         </section>
-                        {{-- <div class="market-single-top">
-                        <div class="market-single-title-wrap">
-                            <h2 class="title">Anatomy Science Club</h2>
-                            <ul class="market-details-meta">
-                                <li>Owned by <a href="{{ url("#") }}">B14484</a></li>
-                                <li class="wishlist">6 favorites</li>
-                            </ul>
-                        </div>
-                        <div class="market-single-action">
-                            <ul>
-                                <li><a href="{{ url("#") }}"><i class="fas fa-share-alt"></i></a></li>
-                                <li><a href="{{ url("#") }}"><i class="fi-sr-menu-dots"></i></a></li>
-                            </ul>
-                        </div>
-                    </div> --}}
-                        {{-- <div class="row">
-                        <div class="col-sm-6">
-                            <div class="market-single-creator">
-                                <div class="thumb"><img src="{{ asset("/assets/img/others/mp_avatar01.png") }}" alt=""></div>
-                                <div class="info">
-                                    <h5 class="title"><a href="{{ url("author-profile.html") }}">David Michels</a></h5>
-                                    <span>Creators by</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="market-single-creator">
-                                <div class="thumb"><img src="{{ asset("/assets/img/others/mp_avatar02.png") }}" alt=""></div>
-                                <div class="info">
-                                    <h5 class="title"><a href="{{ url("author-profile.html") }}">MR. Tartos</a></h5>
-                                    <span>Collection by</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                        {{-- <div class="market-single-content">
-                        <p>What even is an NFT? NFT stands for non-fungible token, which basically means that it's one-of-kind digital asset that belongs to you and you only. The most popular NFTs right now include artwork and music also include videos.</p>
-                    </div> --}}
-                        {{-- <div class="highest-bid-wrap">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-12 col-md-6">
-                                <h5 class="title">Highest bid</h5>
-                                <div class="highest-bid-avatar">
-                                    <div class="thumb"><img src="{{ asset("/assets/img/others/heighest_avatar.png") }}" alt=""></div>
-                                    <div class="content">
-                                        <h5 class="title"><a href="{{ url("author-profile.html") }}">Tomas lindahl</a></h5>
-                                        <span>3.005wETH</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-12 col-md-6">
-                                <h5 class="title">Auction has ended</h5>
-                                <div class="bid-countdown-wrap">
-                                    <div class="coming-time" data-countdown="2022/05/16"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                        <a href="{{ url('#') }}" class="place-bid-btn">Place a bid</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="activity-table-responsive">
 
-                            <table class="table activity-table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="title">Description</th>
-                                        <th scope="col">Floor Price</th>
-                                        <th scope="col">Owners</th>
-                                        <th scope="col" class="time">Assets</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row" class="author">
-                                            <img src="{{ asset('/assets/img/others/mp_activity_author01.png') }}"
-                                                alt=""> <a href="{{ url('nft-marketplace.html') }}">Trading
-                                                Pet</a>
-                                        </th>
-                                        <td>+5486%</td>
-                                        <td>-965%</td>
-                                        <td>2,356 ETH</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="author">
-                                            <img src="{{ asset('/assets/img/others/mp_activity_author02.png') }}"
-                                                alt=""> <a href="{{ url('nft-marketplace.html') }}">Trading
-                                                Craft</a>
-                                        </th>
-                                        <td>+5486%</td>
-                                        <td>-965%</td>
-                                        <td>2,356 ETH</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="author">
-                                            <img src="{{ asset('/assets/img/others/mp_activity_author03.png') }}"
-                                                alt=""> <a href="{{ url('nft-marketplace.html') }}">Trading
-                                                Cards</a>
-                                        </th>
-                                        <td>+5486%</td>
-                                        <td>-965%</td>
-                                        <td>2,356 ETH</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        {{-- <a href="{{ url('#') }}" class="place-bid-btn">Place a bid</a> --}}
                     </div>
                     <div class="col-lg-6">
-                        <div class="bid-history-wrap">
+                        <div class="sell-nfts-item m-5">
+                            <img src="assets/img/icons/nfts_01.png" alt="" class="icon">
+                            <span class="step-count">go step 1</span>
+                            <h5 class="title">Explore diving in Jordan</h5>
+                            <p>The main attraction for divers is Jordan’s southernmost tip where the Red Sea’s tropical waters bathe some of the most spectacular coral reefs in the world. While the total coastline is only about 27 km long, there are plenty of dive sites to choose from - many of them located within Aqaba Marine Park. Here divers enjoy a wide variety of soft and hard coral and myriad reef fish.
+
+                                Most of the 20+ sites are accessible from the shore. The variety of dive sites available along Jordan's small coast will surprise many. These include wrecks and a gorgeous reef dive that everyone can enjoy. The black coral has grown from 5 to 40m and is now home to hawksbill turtles, eagle rays and a variety of reef fish. Divers have the chance to interact with feather tail stingrays and pygmy slug nudibranchs.</p>
+                        </div>
+
+                       
+
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bid-history-wrap ">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="bid-tab" data-bs-toggle="tab"
                                         data-bs-target="#bid" type="button" role="tab" aria-controls="bid"
-                                        aria-selected="true">Bid History</button>
+                                        aria-selected="true">Diving Sites</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info"
                                         type="button" role="tab" aria-controls="info"
-                                        aria-selected="false">Info</button>
+                                        aria-selected="false">Dive Centers</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="provenance-tab" data-bs-toggle="tab"
-                                        data-bs-target="#provenance" type="button" role="tab"
-                                        aria-controls="provenance" aria-selected="false">Provenance</button>
-                                </li>
+                             
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="bid" role="tabpanel"
@@ -221,18 +129,17 @@
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
                                                         <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar.png') }}"
+                                                                src="{{ asset('/img/site/IMG_4875.jpeg') }}"
                                                                 alt=""></div>
                                                         <div class="content">
                                                             <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
+                                                                    href="{{ url('') }}">The Tank (M42 Duster)</a></h5>
+                                                            <span>Aqaba</span>
                                                         </div>
                                                     </div>
                                                     <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
+                                                        <span>Depth: Surface to 10m</span>
+                                                        <p class="">Access: shore/ boat</p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -240,116 +147,40 @@
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
                                                         <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar02.png') }}"
+                                                                src="{{ asset('/img/site/IMG_4877-standard-scale-4_00x-scaled.jpeg') }}"
                                                                 alt=""></div>
                                                         <div class="content">
                                                             <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">David
-                                                                    Michels</a></h5>
-                                                            <span>Bid listed</span>
+                                                                    href="{{ url('author-profile.html') }}">Hercules C-130</a></h5>
+                                                            <span>Aqaba</span>
                                                         </div>
                                                     </div>
                                                     <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
+                                                        <span>Depth: Surface to 20 m</span>
+                                                        <p class="">Access: shore/ boat</p>
                                                     </div>
                                                 </div>
                                             </li>
+                                         
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
                                                         <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar03.png') }}"
+                                                                src="{{ asset('/img/site/IMG_9644.jpeg') }}"
                                                                 alt=""></div>
                                                         <div class="content">
                                                             <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Jonny Dev</a>
-                                                            </h5>
-                                                            <span>Bid listed</span>
+                                                                    href="{{ url('') }}">Japanese garden reef</a></h5>
+                                                            <span>Aqaba</span>
                                                         </div>
                                                     </div>
                                                     <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
+                                                        <span>Depth: Surface to 40 m</span>
+                                                        <p class="">Access: shore/ boat</p>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar04.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar05.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Tomas
-                                                                    Komai</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar06.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Tomas
-                                                                    Harne</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
+   
                                         </ul>
                                     </div>
                                 </div>
@@ -360,264 +191,58 @@
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
                                                         <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar02.png') }}"
+                                                                src="{{ asset('/img/dive/dive.png') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
+                                                            <h5 class="title"><a href="{{ url('#') }}">ALDC</a></h5>
+                                                            <span>Aqaba</span>
                                                         </div>
                                                     </div>
-                                                    <div class="bid-history-info">
+                                                    {{-- <div class="bid-history-info">
                                                         <span>8 hours ago</span>
                                                         <h6 class="title">25 ETH</h6>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
                                                         <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar03.png') }}"
+                                                                src="{{ asset('') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
+                                                            <h5 class="title"><a href="{{ url('#') }}">Mr.Frogman Dive Center</a></h5>
+                                                            <span>Aqaba</span>
                                                         </div>
                                                     </div>
-                                                    <div class="bid-history-info">
+                                                    {{-- <div class="bid-history-info">
                                                         <span>8 hours ago</span>
                                                         <h6 class="title">25 ETH</h6>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
                                                         <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar04.png') }}"
+                                                                src="{{ asset('img/dive/download.jfif') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
+                                                            <h5 class="title"><a href="{{ url('#') }}">AIDC</a></h5>
+                                                            <span>Aqaba</span>
                                                         </div>
                                                     </div>
-                                                    <div class="bid-history-info">
+                                                    {{-- <div class="bid-history-info">
                                                         <span>8 hours ago</span>
                                                         <h6 class="title">25 ETH</h6>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar05.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar06.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar02.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
+ 
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="provenance" role="tabpanel"
-                                    aria-labelledby="provenance-tab">
-                                    <div class="bid-history-overflow scroll">
-                                        <ul class="bid-history-list">
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar02.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar03.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar04.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar05.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar06.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="bid-history-item">
-                                                    <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/assets/img/others/heighest_avatar.png') }}"
-                                                                alt=""></div>
-                                                        <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Tomas
-                                                                    lindahl</a></h5>
-                                                            <span>Bid listed</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bid-history-info">
-                                                        <span>8 hours ago</span>
-                                                        <h6 class="title">25 ETH</h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                              
                             </div>
                         </div>
                     </div>
@@ -627,215 +252,7 @@
         <!-- market-single-area-end -->
 
         <!-- top-collection-area -->
-        <section class="top-collection-area live-auctions-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="section-title mb-40">
-                            <h2 class="title">Live Auctions <img src="{{ asset('/assets/img/icons/title_icon01.png') }}"
-                                    alt=""></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row top-collection-active">
-                    <div class="col-xl-3">
-                        <div class="top-collection-item">
-                            <div class="collection-item-top">
-                                <ul>
-                                    <li class="avatar"><a href="{{ url('author-profile.html') }}" class="thumb"><img
-                                                src="{{ asset('/assets/img/others/top_col_avatar.png') }}"
-                                                alt=""></a>By <a href="{{ url('author-profile.html') }}"
-                                            class="name">Jonson</a></li>
-                                    <li class="info-dots dropdown">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <a href="{{ url('#') }}" class="dropdown-toggle" data-bs-toggle="dropdown"
-                                            role="button" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Artwork</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Action</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Author Action</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="collection-item-thumb">
-                                <a href="{{ url('market-single.html') }}"><img
-                                        src="{{ asset('/assets/img/others/top_collection01.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="collection-item-content">
-                                <h5 class="title"><a href="{{ url('market-single.html') }}">Pie Collection</a> <span
-                                        class="price">5.4 ETH</span></h5>
-                            </div>
-                            <div class="collection-item-bottom">
-                                <ul>
-                                    <li class="bid"><a href="{{ url('market-single.html') }}" class="btn">place a
-                                            bid</a></li>
-                                    <li class="wishlist"><a href="{{ url('#') }}">59</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="top-collection-item">
-                            <div class="collection-item-top">
-                                <ul>
-                                    <li class="avatar"><a href="{{ url('author-profile.html') }}" class="thumb"><img
-                                                src="{{ asset('/assets/img/others/top_col_avatar.png') }}"
-                                                alt=""></a>By <a href="{{ url('author-profile.html') }}"
-                                            class="name">Jonson</a></li>
-                                    <li class="info-dots dropdown">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <a href="{{ url('#') }}" class="dropdown-toggle" data-bs-toggle="dropdown"
-                                            role="button" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Artwork</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Action</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Author Action</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="collection-item-thumb">
-                                <a href="{{ url('market-single.html') }}"><img
-                                        src="{{ asset('/assets/img/others/top_collection02.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="collection-item-content">
-                                <h5 class="title"><a href="{{ url('market-single.html') }}">Action Collection</a> <span
-                                        class="price">5.4 ETH</span></h5>
-                            </div>
-                            <div class="collection-item-bottom">
-                                <ul>
-                                    <li class="bid"><a href="{{ url('market-single.html') }}" class="btn">place a
-                                            bid</a></li>
-                                    <li class="wishlist"><a href="{{ url('#') }}">59</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="top-collection-item">
-                            <div class="collection-item-top">
-                                <ul>
-                                    <li class="avatar"><a href="{{ url('author-profile.html') }}" class="thumb"><img
-                                                src="{{ asset('/assets/img/others/top_col_avatar.png') }}"
-                                                alt=""></a>By <a href="{{ url('author-profile.html') }}"
-                                            class="name">Jonson</a></li>
-                                    <li class="info-dots dropdown">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <a href="{{ url('#') }}" class="dropdown-toggle" data-bs-toggle="dropdown"
-                                            role="button" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Artwork</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Action</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Author Action</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="collection-item-thumb">
-                                <a href="{{ url('market-single.html') }}"><img
-                                        src="{{ asset('/assets/img/others/top_collection03.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="collection-item-content">
-                                <h5 class="title"><a href="{{ url('market-single.html') }}">Craft Collection</a> <span
-                                        class="price">5.4 ETH</span></h5>
-                            </div>
-                            <div class="collection-item-bottom">
-                                <ul>
-                                    <li class="bid"><a href="{{ url('market-single.html') }}" class="btn">place a
-                                            bid</a></li>
-                                    <li class="wishlist"><a href="{{ url('#') }}">59</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="top-collection-item">
-                            <div class="collection-item-top">
-                                <ul>
-                                    <li class="avatar"><a href="{{ url('author-profile.html') }}" class="thumb"><img
-                                                src="{{ asset('/assets/img/others/top_col_avatar.png') }}"
-                                                alt=""></a>By <a href="{{ url('author-profile.html') }}"
-                                            class="name">Jonson</a></li>
-                                    <li class="info-dots dropdown">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <a href="{{ url('#') }}" class="dropdown-toggle" data-bs-toggle="dropdown"
-                                            role="button" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Artwork</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Action</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Author Action</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="collection-item-thumb">
-                                <a href="{{ url('market-single.html') }}"><img
-                                        src="{{ asset('/assets/img/others/top_collection04.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="collection-item-content">
-                                <h5 class="title"><a href="{{ url('market-single.html') }}">Artwork Collection</a> <span
-                                        class="price">5.4 ETH</span></h5>
-                            </div>
-                            <div class="collection-item-bottom">
-                                <ul>
-                                    <li class="bid"><a href="{{ url('market-single.html') }}" class="btn">place a
-                                            bid</a></li>
-                                    <li class="wishlist"><a href="{{ url('#') }}">59</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="top-collection-item">
-                            <div class="collection-item-top">
-                                <ul>
-                                    <li class="avatar"><a href="{{ url('author-profile.html') }}" class="thumb"><img
-                                                src="{{ asset('/assets/img/others/top_col_avatar.png') }}"
-                                                alt=""></a>By <a href="{{ url('author-profile.html') }}"
-                                            class="name">Jonson</a></li>
-                                    <li class="info-dots dropdown">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <a href="{{ url('#') }}" class="dropdown-toggle" data-bs-toggle="dropdown"
-                                            role="button" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Artwork</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Action</a></li>
-                                            <li><a href="{{ url('nft-marketplace.html') }}">Author Action</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="collection-item-thumb">
-                                <a href="{{ url('market-single.html') }}"><img
-                                        src="{{ asset('/assets/img/others/top_collection09.jpg') }}" alt=""></a>
-                            </div>
-                            <div class="collection-item-content">
-                                <h5 class="title"><a href="{{ url('market-single.html') }}">Drop Collection</a> <span
-                                        class="price">5.4 ETH</span></h5>
-                            </div>
-                            <div class="collection-item-bottom">
-                                <ul>
-                                    <li class="bid"><a href="{{ url('market-single.html') }}" class="btn">place a
-                                            bid</a></li>
-                                    <li class="wishlist"><a href="{{ url('#') }}">59</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    
         <!-- top-collection-area-end -->
 
     </main>
@@ -854,18 +271,53 @@
             .then((data) => {
                 // Weather main data
                 let main = data.current.weather[0].main;
-
+                console.log(main);
+                // Backgrounds
+                switch (main) {
+                    case "Snow":
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/snow.gif')";
+                        break;
+                    case "Clouds":
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/clouds.gif')";
+                        break;
+                    case "Fog":
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/fog.gif')";
+                        break;
+                    case "Rain":
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/rain.gif')";
+                        break;
+                    case "Clear":
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/clear.gif')";
+                        break;
+                    case "Thunderstorm":
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/thunderstorm.gif')";
+                        break;
+                    default:
+                        document.getElementById("wrapper-bg").style.backgroundImage =
+                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/clear.gif')";
+                        break;
+                }
                 let description = data.current.weather[0].description;
-              
-                let temp = Math.round(data.current.temp);  console.log(pressure, 'roa');
+
+                let temp = Math.round(data.current.temp);
                 let pressure = data.current.pressure;
+                console.log(pressure);
+                document.getElementById("wrapper-pressure").innerHTML = pressure;
                 let humidity = data.current.humidity;
+                document.getElementById("wrapper-humidity").innerHTML = humidity + "°C";
                 let name = "Aqaba";
 
                 document.getElementById("wrapper-description").innerHTML = description;
                 document.getElementById("wrapper-temp").innerHTML = temp + "°C";
-                document.getElementById("wrapper-pressure").innerHTML = pressure;
-                document.getElementById("wrapper-humidity").innerHTML = humidity + "°C";
+
+
+
                 document.getElementById("wrapper-name").innerHTML = name;
 
                 // Weather hourly data
@@ -965,37 +417,7 @@
                 let iconFullyUrlHour5 = iconBaseUrl + iconHour5 + iconFormat;
                 document.getElementById("wrapper-icon-hour5").src = iconFullyUrlHour5;
 
-                // Backgrounds
-                switch (main) {
-                    case "Snow":
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/snow.gif')";
-                        break;
-                    case "Clouds":
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/clouds.gif')";
-                        break;
-                    case "Fog":
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/fog.gif')";
-                        break;
-                    case "Rain":
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/rain.gif')";
-                        break;
-                    case "Clear":
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/clear.gif')";
-                        break;
-                    case "Thunderstorm":
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/thunderstorm.gif')";
-                        break;
-                    default:
-                        document.getElementById("wrapper-bg").style.backgroundImage =
-                            "url('https://mdbgo.io/ascensus/mdb-advanced/img/clear.gif')";
-                        break;
-                }
+
             });
     </script>
 @endsection
