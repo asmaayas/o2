@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro</title>
     <link rel="stylesheet" href="./css/buss.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -31,6 +31,7 @@
     <li class="ma "><a href="#" >Cars</a></li>
 
 </ul> --}}
+
 </div>
     <div class="base ">
         <div class="circle4">
@@ -38,11 +39,11 @@
                 <div class="circle3">
                     <div class="circleMap" id="biig">
                         <div class="circleMap__items top li " onclick="myFunction()">
-                            <img src="https://imgs.search.brave.com/HrlZ4j2HfBoFriokx-qOLfKh2pwclFZmC9TAjceElQ0/rs:fit:640:480:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8tb1RXYWx4a25f/ZE0vVWJXVjFnNEJf/cEkvQUFBQUFBQUFG/bTgvb3FmeUg3ZlB6/ejgvczE2MDAvZ2xv/c3N5K3JvdW5kK2Zs/YWcrb2Yram9yZGFu/LnBuZw" style="height: 200px; width:200px"  alt="">
+                            <a href="/home"><img src="https://imgs.search.brave.com/HrlZ4j2HfBoFriokx-qOLfKh2pwclFZmC9TAjceElQ0/rs:fit:640:480:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8tb1RXYWx4a25f/ZE0vVWJXVjFnNEJf/cEkvQUFBQUFBQUFG/bTgvb3FmeUg3ZlB6/ejgvczE2MDAvZ2xv/c3N5K3JvdW5kK2Zs/YWcrb2Yram9yZGFu/LnBuZw" style="height: 200px; width:200px"  alt="">
                             {{-- <div class="fi fi-jo" style="width: 200px; height:100px"></div>  --}}
                             
                             <div class="circleMap__items--text pic">
-                               Jordan
+                              <a href="/home">Jordan</a> 
                             </div>
                         </div>
                         <div class="circleMap__items left li">

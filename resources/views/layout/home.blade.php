@@ -24,24 +24,17 @@
             </div>
         </section> --}}
 
-        <div class="breadcrumb-area market-single-breadcrumb-area ">
-            <div class="breadcrumb-bg"></div>
+        <section class="breadcrumb-area breadcrumb-bg breadcrumb-bg-two">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="market-single-breadcrumb">
-                            {{-- <div class="home-back-btn"><a href="{{ url("index.html") }}">go back to home</a></div> --}}
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Jordan</a></li>
-
-                                </ol>
-                            </nav>
+                    <div class="col-lg-6 col-md-8">
+                        <div class="breadcrumb-content text-center">
+                            <h3 class="title">About Jordan</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- breadcrumb-area-end -->
 
         <!-- market-single-area -->
@@ -49,7 +42,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="market-single-img">
+                        <div class="market-single-img mt-100">
                             <img src="{{ asset('https://imgs.search.brave.com/HrlZ4j2HfBoFriokx-qOLfKh2pwclFZmC9TAjceElQ0/rs:fit:640:480:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8tb1RXYWx4a25f/ZE0vVWJXVjFnNEJf/cEkvQUFBQUFBQUFG/bTgvb3FmeUg3ZlB6/ejgvczE2MDAvZ2xv/c3N5K3JvdW5kK2Zs/YWcrb2Yram9yZGFu/LnBuZw') }}"
                                 alt="">
                         </div>
@@ -57,13 +50,14 @@
                     <div class="col-lg-6">
 
                         <section class="">
-                            <div class=" py-5">
+                            <div class="container  py-5">
 
-                                <p class="title mb-5">Weather</p>
+                               
+                                <p class="title my-5">Weather</p>
 
                                 <div id="wrapper-bg" class="card text-white bg-image shadow-4-strong"
                                     style="background-image: url('img/clouds.gif'); background-repeat: no-repeat;
-                                            background-size: cover;border:none">
+                                            background-size: cover;border:none; width:80%">
                                     <!-- Main current data -->
                                     <div class="card-header p-4 border-0">
                                         <div class="text-center mb-3">
@@ -86,22 +80,30 @@
                                 </div>
 
                             </div>
-
+                  
                         </section>
-
+                        <a href="{{ url('/sites') }}" class="banner-btn">See All Sites<i class="fi-sr-arrow-right"></i></a>
                         {{-- <a href="{{ url('#') }}" class="place-bid-btn">Place a bid</a> --}}
                     </div>
                     <div class="col-lg-6">
                         <div class="sell-nfts-item m-5">
-                            <img src="assets/img/icons/nfts_01.png" alt="" class="icon">
+
                             <span class="step-count">go step 1</span>
                             <h5 class="title">Explore diving in Jordan</h5>
-                            <p>The main attraction for divers is Jordan’s southernmost tip where the Red Sea’s tropical waters bathe some of the most spectacular coral reefs in the world. While the total coastline is only about 27 km long, there are plenty of dive sites to choose from - many of them located within Aqaba Marine Park. Here divers enjoy a wide variety of soft and hard coral and myriad reef fish.
+                            <p>The main attraction for divers is Jordan’s southernmost tip where the Red Sea’s tropical
+                                waters bathe some of the most spectacular coral reefs in the world. While the total
+                                coastline is only about 27 km long, there are plenty of dive sites to choose from - many of
+                                them located within Aqaba Marine Park. Here divers enjoy a wide variety of soft and hard
+                                coral and myriad reef fish.
 
-                                Most of the 20+ sites are accessible from the shore. The variety of dive sites available along Jordan's small coast will surprise many. These include wrecks and a gorgeous reef dive that everyone can enjoy. The black coral has grown from 5 to 40m and is now home to hawksbill turtles, eagle rays and a variety of reef fish. Divers have the chance to interact with feather tail stingrays and pygmy slug nudibranchs.</p>
+                                Most of the 20+ sites are accessible from the shore. The variety of dive sites available
+                                along Jordan's small coast will surprise many. These include wrecks and a gorgeous reef dive
+                                that everyone can enjoy. The black coral has grown from 5 to 40m and is now home to
+                                hawksbill turtles, eagle rays and a variety of reef fish. Divers have the chance to interact
+                                with feather tail stingrays and pygmy slug nudibranchs.</p>
                         </div>
 
-                       
+
 
 
                     </div>
@@ -115,10 +117,10 @@
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info"
-                                        type="button" role="tab" aria-controls="info"
-                                        aria-selected="false">Dive Centers</button>
+                                        type="button" role="tab" aria-controls="info" aria-selected="false">Dive
+                                        Centers</button>
                                 </li>
-                             
+
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="bid" role="tabpanel"
@@ -128,12 +130,11 @@
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/img/site/IMG_4875.jpeg') }}"
+                                                        <div class="thumb"><img src="{{ asset('/img/site/site1.jpeg') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('') }}">The Tank (M42 Duster)</a></h5>
+                                                            <h5 class="title"><a href="{{ url('/site') }}">The Tank (M42
+                                                                    Duster)</a></h5>
                                                             <span>Aqaba</span>
                                                         </div>
                                                     </div>
@@ -150,8 +151,8 @@
                                                                 src="{{ asset('/img/site/IMG_4877-standard-scale-4_00x-scaled.jpeg') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('author-profile.html') }}">Hercules C-130</a></h5>
+                                                            <h5 class="title"><a href="{{ url('#') }}">Hercules
+                                                                    C-130</a></h5>
                                                             <span>Aqaba</span>
                                                         </div>
                                                     </div>
@@ -161,7 +162,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                         
+
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
@@ -169,8 +170,8 @@
                                                                 src="{{ asset('/img/site/IMG_9644.jpeg') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a
-                                                                    href="{{ url('') }}">Japanese garden reef</a></h5>
+                                                            <h5 class="title"><a href="{{ url('') }}">Japanese
+                                                                    garden reef</a></h5>
                                                             <span>Aqaba</span>
                                                         </div>
                                                     </div>
@@ -180,7 +181,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-   
+
                                         </ul>
                                     </div>
                                 </div>
@@ -190,11 +191,11 @@
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('/img/dive/dive.png') }}"
+                                                        <div class="thumb"><img src="{{ asset('/img/dive/dive.png') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">ALDC</a></h5>
+                                                            <h5 class="title"><a href="{{ url('/center') }}">ALDC</a>
+                                                            </h5>
                                                             <span>Aqaba</span>
                                                         </div>
                                                     </div>
@@ -207,11 +208,11 @@
                                             <li>
                                                 <div class="bid-history-item">
                                                     <div class="highest-bid-avatar">
-                                                        <div class="thumb"><img
-                                                                src="{{ asset('') }}"
+                                                        <div class="thumb"><img src="{{ asset('') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">Mr.Frogman Dive Center</a></h5>
+                                                            <h5 class="title"><a href="{{ url('#') }}">Mr.Frogman
+                                                                    Dive Center</a></h5>
                                                             <span>Aqaba</span>
                                                         </div>
                                                     </div>
@@ -228,7 +229,8 @@
                                                                 src="{{ asset('img/dive/download.jfif') }}"
                                                                 alt=""></div>
                                                         <div class="content">
-                                                            <h5 class="title"><a href="{{ url('#') }}">AIDC</a></h5>
+                                                            <h5 class="title"><a href="{{ url('#') }}">AIDC</a>
+                                                            </h5>
                                                             <span>Aqaba</span>
                                                         </div>
                                                     </div>
@@ -238,11 +240,11 @@
                                                     </div> --}}
                                                 </div>
                                             </li>
- 
+
                                         </ul>
                                     </div>
                                 </div>
-                              
+
                             </div>
                         </div>
                     </div>
@@ -252,7 +254,7 @@
         <!-- market-single-area-end -->
 
         <!-- top-collection-area -->
-    
+
         <!-- top-collection-area-end -->
 
     </main>

@@ -16,6 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', function () {
     return view('layout.home');
 });
+
 Route::get('/', function () {
     return view('layout.intro');
+});
+Route::get('/center', function () {
+    return view('layout.sigleCenter');
+});
+Route::get('/centers', function () {
+    return view('layout.centers');
+});
+Route::get('/sites', function () {
+    return view('layout.sites');
+});
+Route::get('/site', function () {
+    return view('layout.singleSite');
 });

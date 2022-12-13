@@ -7,7 +7,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-5 col-sm-9">
                                 <div class="footer-widget">
                                     <div class="footer-logo mb-25">
-                                        <a href="{{ url('index.html') }}"><img src="{{ asset('img/logo/logo.png') }}" alt=""></a>
+                                        <a href="{{ url('/') }}"><img src="{{ asset('img/logo.png') }}" height="90" alt=""></a>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veritatis sequi doloribus fuga.</p>
                                     <ul class="footer-social">
@@ -22,11 +22,11 @@
                                 <div class="footer-widget">
                                     <h4 class="fw-title">Useful Links</h4>
                                     <ul class="fw-links">
-                                        <li><a href="{{ url('nft-marketplace.html') }}">All NFTs</a></li>
-                                        <li><a href="{{ url('login-register.html') }}">How It Works</a></li>
-                                        <li><a href="{{ url('create-item.html') }}">Create</a></li>
-                                        <li><a href="{{ url('nft-marketplace.html') }}">Explore</a></li>
-                                        <li><a href="{{ url('login-register.html') }}">Privacy & Terms</a></li>
+                                        <li><a href="{{ url('/') }}">Home</a></li>
+                                        <li><a href="{{ url('/sites') }}">All Sites</a></li>
+                                        <li><a href="{{ url('/centers') }}">All Centers</a></li>
+                                        <li><a href="{{ url('') }}">Fliter Photo</a></li>
+                                        <li><a href="{{ url('') }}">Book</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -59,14 +59,14 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="copyright-text">
-                                    <p>All rights reserved © 2022 by <a href="{{ url('') }}">ThemeBeyond</a></p>
+                                    <p>All rights reserved © 2022 by <a href="https://a360p.com/" target="_blank">Actual360</a></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <ul class="copyright-link-list">
-                                    <li><a href="{{ url('login-register.html') }}">Privacy Policy</a></li>
-                                    <li><a href="{{ url('login-register.html') }}">Terms And Condition</a></li>
-                                    <li><a href="{{ url('login-register.html') }}">Contact Us</a></li>
+                                    <li><a href="{{ url('') }}">Privacy Policy</a></li>
+                                    <li><a href="{{ url('') }}">Terms And Condition</a></li>
+                                    <li><a href="{{ url('') }}">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
